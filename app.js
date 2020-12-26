@@ -30,6 +30,12 @@ if (config.devices) {
     });
 }
 
+app.get('/.well-known/pki-validation/54779D9FADA20A998EF20AA5EEDC1941.txt', (req, res) => {
+    res.send(`A044AECACDE946880B4832E79390B15D437C37BF4290F5172ABC64DF6BC8E5A0
+comodoca.com
+102206dffdb506f`);
+});
+
 const client = mqtt.connect(`mqtt://${config.mqtt.host}`, {
     port: config.mqtt.port,
     username: config.mqtt.user,

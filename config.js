@@ -45,8 +45,8 @@ module.exports = {
             mqtt: [
                  {
                     type: 'on',
-                    set: 'test_house/0xec1bbdfffec5dfd8/set',
-                    stat: 'test_house/0xec1bbdfffec5dfd8'
+                    set: 'test_house/powerswitch/cmnd/POWER',
+                    stat: 'test_house/powerswitch/STATE'
                 },
             ],
             capabilities: [

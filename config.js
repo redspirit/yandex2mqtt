@@ -38,6 +38,7 @@ module.exports = {
     devices: [
     //_______________Первое устройство______________//
         {
+            id: 'cherepahi',
             name: 'Черепахи',
             room: 'Спальня',
             type: 'devices.types.light',

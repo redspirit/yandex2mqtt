@@ -1,10 +1,10 @@
 module.exports = {
 
     mqtt: {
-        host: 'localhost',
-        port: 1883,
-        user: '',
-        password: ''
+        host: 'mqtt.elki.io',
+        port: 9883,
+        user: 'client',
+        password: '1234'
     },
 
     http: {
@@ -38,14 +38,14 @@ module.exports = {
     devices: [
     //_______________Первое устройство______________//
         {
-            name: 'Свет',
-            room: 'Комната',
+            name: 'Черепахи',
+            room: 'Спальня',
             type: 'devices.types.light',
             mqtt: [
                  {
                     type: 'on',
-                    set: '/devices/yandex/controls/light1/on',
-                    stat: '/devices/yandex/controls/light1'
+                    set: 'test_house/0xec1bbdfffec5dfd8/set',
+                    stat: 'test_house/0xec1bbdfffec5dfd8'
                 },
             ],
             capabilities: [
